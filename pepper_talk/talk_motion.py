@@ -43,6 +43,7 @@ class Talk(object):
 
     def episode_11(self):
 
+        # episode 1-1
         time.sleep(1)
         self.ans.say("^start(animations/Stand/Gestures/You_1)コチさんと出会ってカラ^wait(animations/Stand/Gesture/You_1)",self.configuration)
 
@@ -53,6 +54,7 @@ class Talk(object):
 
     def episode_12(self):
 
+        #episode 1-2
         time.sleep(1)
         self.ans.say("研究室には^start(animations/Stand/Gestures/Everything_3)色んなロボットがいるケド^wait(animations/Stand/Gesture/Everything_3)",self.configuration)
 
@@ -67,6 +69,7 @@ class Talk(object):
 
     def episode_13(self):
 
+        #episode 1-3
         time.sleep(1)
         self.ans.say("隅っこに、^start(animations/Stand/Gestures/Nothing_2)ひとりぼっちで居たときに^wait(animations/Stand/Gesture/Nothing_2)",self.configuration)
 
