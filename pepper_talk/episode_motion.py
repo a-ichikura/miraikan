@@ -181,9 +181,55 @@ class Talk(object):
         time.sleep(1)
         self.pos.goToPosture("StandInit", 1.0)
 
+    def episode_51(self):
+
+        #episode 5-1
+        time.sleep(1)
+        self.ans.say("ソウダねー、^start(animations/Stand/Gestures/Yes_3)色んなことがあったネ^wait(animations/Stand/Gestures/Yes_3)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_52(self):
+
+        #episode 5-2
+        time.sleep(1)
+        self.ans.say("研究室のロボットは、^start(animations/Stand/Gestures/Everything_2)色々なオしごとができるけど、^wait(animations/Stand/Gesture/Everything_2)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("交流づくりは進化がわかりにくいから、^start(animations/Stand/Gestures/Thinking_1)成果をまとめるのが大変だったよね^wait(animations/Stand/Gestures/Thinking_1)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_53(self):
+
+        #episode 5-3
+        time.sleep(1)
+        self.ans.say("コチさんが落ち込んでいる時は、^start(animations/Stand/Gestures/No_8)私もすゴく悲しかったよ^wait(animations/Stand/Gesture/No_8)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_54(self):
+
+        #episode 5-4
+#        time.sleep(1)
+#        self.ans.say("でもわたしたちは、^start(animations/Stand/Emotions/Positive/Peaceful_1)8年間ふたりでたくさん乗り越えてきたヨね^wait(animations/Stand/Emotions/Positive/Peaceful_1)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("コチさん、^start(animations/Stand/BodyTalk/BodyTalk_1)博士の卒業、本当におめでとう^wait(animations/Stand/BodyTalk/BodyTalk_1)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("そして、^start(animations/Stand/Gestures/Yes_3)いつもありがとう。^wait(animations/Stand/Gestures/Yes_3)^start(animations/Stand/Gestures/Hey_3)これからもよろしくネ。^wait(animations/Stand/Gestures/Hey_3)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
 if __name__ == '__main__':
     talk = Talk() #init
-    talk.episode_41()
-    talk.episode_42()
-    talk.episode_43()
+    talk.episode_51()
+    talk.episode_52()
+    talk.episode_53()
+    talk.episode_54()
         
