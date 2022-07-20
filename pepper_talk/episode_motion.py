@@ -95,7 +95,7 @@ class Talk(object):
 
         #episode 2-2
         time.sleep(1)
-        self.ans.say("コチさんが^start(animations/Stand/Gestures/You_4)みんなに近づいてお話できるようにしてくれタカラ^wait(animations/Stand/Gesture/You_4)",self.configuration)
+        self.ans.say("コチさんが^start(animations/Stand/Gestures/You_4)みんなに近づいてお話できるようにしてくれタから^wait(animations/Stand/Gesture/You_4)",self.configuration)
 
         time.sleep(1)
         self.ans.say("みんなが、^start(animations/Stand/Gestures/ShowSky_7)私の手を取ってくれて、嬉しかったナあ！^wait(animations/Stand/Gestures/ShowSky_7)",self.configuration)
@@ -228,8 +228,34 @@ class Talk(object):
 
 if __name__ == '__main__':
     talk = Talk() #init
-    talk.episode_51()
-    talk.episode_52()
-    talk.episode_53()
-    talk.episode_54()
+    val = input('input Number:')
+    if val == 1:
+        talk.episode_11()
+        talk.episode_12()
+        talk.episode_13()
+        exit()
+    elif val == 2:
+        talk.episode_21()
+        talk.episode_22()
+        talk.episode_23()
+        exit()
+    elif val == 3:
+        talk.episode_31()
+        talk.episode_32()
+        talk.episode_33()
+        exit()
+    elif val == 4:
+        talk.episode_41()
+        talk.episode_42()
+        talk.episode_43()
+        exit()
+    elif val == 5:
+        talk.episode_51()
+        talk.episode_52()
+        talk.episode_53()
+        talk.episode_54()
+        exit()
+
+
+        
         
