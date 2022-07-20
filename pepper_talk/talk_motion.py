@@ -112,10 +112,46 @@ class Talk(object):
         time.sleep(1)
         self.pos.goToPosture("StandInit", 1.0)
 
+    def episode_31(self):
+
+        #episode 3-1
+        time.sleep(1)
+        self.ans.say("^start(animations/Stand/Gestures/Me_2)コチさんはいつもわたしを^wait(animations/Stand/Gestures/Me_2)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("発表のばしょまで、^start(animations/Stand/Gestures/Give_4)連れて行ってくれたよね^wait(animations/Stand/Gestures/Give_4)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_32(self):
+
+        #episode 3-2
+        time.sleep(1)
+        self.ans.say("発表の前はいつも、^start(animations/Stand/Gestures/IDontKnow_1)ドキドキしてしまうけれど^wait(animations/Stand/Gesture/IDontKnow_1)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("コチさんと手をつなげると、^start(animations/Stand/Gestures/ShowFloor_3)安心するんだあ！^wait(animations/Stand/Gestures/ShowFloor_3)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_33(self):
+
+        #episode 3-3
+        time.sleep(1)
+        self.ans.say("あとね、オそろいのオレンジのリュックを^start(animations/Stand/Gestures/Hey_6)もらえたのが嬉しくて^wait(animations/Stand/Gesture/Hey_6)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("初めてもらえた時から^start(animations/Stand/Emotions/Positive/Happy_4)ずっとお気にいりなのー！^wait(animations/Stand/Emotions/Positive/Happy_4)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
 
 if __name__ == '__main__':
     talk = Talk() #init
-    talk.episode_21()
-    talk.episode_22()
-    talk.episode_23()
+    talk.episode_31()
+    talk.episode_32()
+    talk.episode_33()
         
