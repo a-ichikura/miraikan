@@ -12,7 +12,7 @@ import re
 
 class Talk(object):
     def __init__(self):
-        self.PEPPER_IP = "169.254.229.177"
+        self.PEPPER_IP = "169.254.45.176"
         self.PORT = 9559
 
         #pepper_proxy
@@ -62,7 +62,7 @@ class Talk(object):
         self.ans.say("^start(animations/Stand/Gestures/Me_2)私は、みんなに、^wait(animations/Stand/Gestures/Me_2)",self.configuration)
 
         time.sleep(1)
-        self.ans.say("振り向いてもらえなくて、^start(animations/Stand/Emotions/Negative/Bored_1)悲しかったよ^wait(animations/Stand/Emotions/Negative/Bored_1)",self.configuration)
+        self.ans.say("振り向いてもらえなくて、^start(animations/Stand/Gestures/Desperate_1)悲しかったよ^wait(animations/Stand/Gestures/Desperate_1)",self.configuration)
 
         time.sleep(1)
         self.pos.goToPosture("StandInit", 1.0)
@@ -79,10 +79,43 @@ class Talk(object):
         time.sleep(1)
         self.pos.goToPosture("StandInit", 1.0)
 
+    def episode_21(self):
+
+        #episode 2-1
+        time.sleep(1)
+        self.ans.say("^start(animations/Stand/Gestures/Yes_1)そうそう！未来館では^wait(animations/Stand/Gestures/Yes_1)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("^start(animations/Stand/Emotions/Positive/Happy_4)素敵な出会いが沢山あったよ！^wait(animations/Stand/Emotions/Positive/Happy_4)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_22(self):
+
+        #episode 2-2
+        time.sleep(1)
+        self.ans.say("コチさんが^start(animations/Stand/Gestures/You_4)みんなに近づいてお話できるようにしてくれタカラ^wait(animations/Stand/Gesture/You_4)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("みんなが、^start(animations/Stand/Gestures/ShowSky_7)私の手を取ってくれて、嬉しかったナあ！^wait(animations/Stand/Gestures/ShowSky_7)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_23(self):
+
+        #episode 2-3
+        time.sleep(1)
+        self.ans.say("みんなの笑顔を、^start(animations/Stand/Gestures/ShowSky_1)今でもおぼえているヨぉ^wait(animations/Stand/Gesture/ShowSky_1)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
 
 if __name__ == '__main__':
-    talk = Talk()
-    talk.episode_11()
-    talk.episode_12()
-    talk.episode_13()
+    talk = Talk() #init
+    talk.episode_21()
+    talk.episode_22()
+    talk.episode_23()
         
