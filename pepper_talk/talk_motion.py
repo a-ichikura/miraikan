@@ -148,10 +148,42 @@ class Talk(object):
         time.sleep(1)
         self.pos.goToPosture("StandInit", 1.0)
 
+    def episode_41(self):
+
+        #episode 4-1
+        time.sleep(1)
+        self.ans.say("あーー、この時！、^start(animations/Stand/Gestures/Excited_1)みんなに会えるのが嬉しくて^wait(animations/Stand/Gestures/Excited_1)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("^start(animations/Stand/Gestures/ShowSky_8)もっと近づきに行ったんだぁ^wait(animations/Stand/Gestures/ShowSky_8)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_42(self):
+
+        #episode 4-2
+        time.sleep(1)
+        self.ans.say("コチさんは、^start(animations/Stand/Gestures/IDontKnow_2)とっても慌てていたね^wait(animations/Stand/Gesture/IDontKnow_2)",self.configuration)
+
+        time.sleep(1)
+        self.ans.say("ちょっと張り切りすぎちゃったーー、^start(animations/Stand/Gestures/Hey_3)ゴメンね^wait(animations/Stand/Gestures/Hey_3)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
+
+    def episode_43(self):
+
+        #episode 4-3
+        time.sleep(1)
+        self.ans.say("わたしが暴走しタら、^start(animations/Stand/Gestures/Explain_6)いつもコチさんに助けてもらっているね^wait(animations/Stand/Gesture/Explain_6)",self.configuration)
+
+        time.sleep(1)
+        self.pos.goToPosture("StandInit", 1.0)
 
 if __name__ == '__main__':
     talk = Talk() #init
-    talk.episode_31()
-    talk.episode_32()
-    talk.episode_33()
+    talk.episode_41()
+    talk.episode_42()
+    talk.episode_43()
         
